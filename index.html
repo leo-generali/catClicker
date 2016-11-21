@@ -6,14 +6,32 @@
     <link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-
     <h1>Cat Clicker</h1>
     <h2>Cats</h2>
-    	<ul id='catNames'></ul>
+	<ul id='cat-list'></ul>
+	<div id='cat'>
+		<p id='count'></p>
+		<h2 id='cat-name'></h2>
+		<img id='cat-pic' src='' alt='swaggy cat'>
+	</div>
+	<button type='button' id='admin-button'>Admin Panel</button>
+	<form id='admin'>
+		Cat Name:<br>
+		<input type='text' name='catName' value='' id='catNameId'>
+		<br>
+		Cat Image:<br>
+		<input type='text' name='catImage' value='' id='catImageId'>
+		<br>
+		Cat Score:<br>
+		<input type='text' name='catScore' value='' id='catScoreId'>
+		<br>
+		<button type="button" id='admin-button-save'>Save</button>
+		<button type="button" id='admin-button-reset'>Reset</button>
+	</form>
+    
+	<div id='catPics'></div>
 
-
-    <div id='catPics'></div>
-
-    <script src='js/script.js'></script>
+    <script src='js/mvo-script.js'></script>
 </body>
 </html>
+
